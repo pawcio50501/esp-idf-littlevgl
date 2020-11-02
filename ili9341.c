@@ -104,7 +104,7 @@ void ili9341_init(void)
 
 	///Enable backlight
 	printf("Enable backlight.\n");
-	gpio_set_level(ILI9341_BCKL, ILI9341_BCKL_ACTIVE_LVL);
+	gpio_set_level(ILI9341_BCKL, CONFIG_DISP_BCKL_ACTIVE_LVL);
 }
 
 

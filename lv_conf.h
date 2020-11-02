@@ -35,7 +35,7 @@
 
 /* Swap the 2 bytes of RGB565 color.
  * Useful if the display has a 8 bit interface (e.g. SPI)*/
-#define LV_COLOR_16_SWAP   1
+#define LV_COLOR_16_SWAP   0
 
 /* 1: Enable screen transparency.
  * Useful for OSD or other overlapping GUIs.
@@ -241,7 +241,7 @@ typedef void * lv_indev_drv_user_data_t;            /*Type of user data in the i
 #define LV_USE_THEME_ALIEN      0   /*Dark futuristic theme*/
 #define LV_USE_THEME_NIGHT      0   /*Dark elegant theme*/
 #define LV_USE_THEME_MONO       0   /*Mono color theme for monochrome displays*/
-#define LV_USE_THEME_MATERIAL   0   /*Flat theme with bold colors and light shadows*/
+#define LV_USE_THEME_MATERIAL   1   /*Flat theme with bold colors and light shadows*/
 #define LV_USE_THEME_ZEN        0   /*Peaceful, mainly light theme */
 #define LV_USE_THEME_NEMO       0   /*Water-like theme based on the movie "Finding Nemo"*/
 
@@ -490,7 +490,7 @@ typedef void * lv_obj_user_data_t;
 /*--END OF LV_CONF_H--*/
 
 /*Be sure every define has a default value*/
-#include "lvgl/src/lv_conf_checker.h"
+#include "lvgl/src/lv_conf_internal.h"
 
 #endif /*LV_CONF_H*/
 
